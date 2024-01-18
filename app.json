@@ -9,6 +9,13 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "androidNavigationBar": {
+      "backgroundColor": "#121212"
+    },
+    "androidStatusBar": {
+      "translucent": false,
+      "barStyle": "dark-content"
+    },
     "ios": {
       "supportsTablet": true
     },
