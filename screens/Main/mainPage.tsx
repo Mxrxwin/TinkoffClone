@@ -1,8 +1,10 @@
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
+
 import Search from "../../components/Search";
 import UserBar from "./Components/userBar";
 import StoryBar from "./Components/storyBar";
+import MainPart from "./Components/spendingsAndCashback";
 
 export default function MainPage() {
 	return (
@@ -10,6 +12,7 @@ export default function MainPage() {
 			<Search />
 			<UserBar />
 			<StoryBar />
+			<MainPart />
 		</View>
 	);
 }

@@ -21,7 +21,6 @@ export default function StoryBar() {
 
 
 	const Item: React.FC<{ item: ItemProps }> = ({ item }) => (
-		console.log(item.view),
 		<TouchableOpacity 
 			style={[styles.imageView, {borderColor: item.view ? '#121212' : '#5684cf'}]}
 			onPress={() => changeViewProp(item.id)}
@@ -39,7 +38,6 @@ export default function StoryBar() {
 	const changeViewProp = (id: number) => {
 		const newData = [...data]; 
 		newData[id] = { ...newData[id], view: true }; 
-		console.log(newData === data); 
 		setData(newData); 
 	}
 
@@ -76,7 +74,6 @@ const styles = StyleSheet.create({
 	lineContainer: {
 		flexDirection: "row",
 		justifyContent: "space-between",
-		width: "95%",
 		marginTop: 20,
 	},
 	imageContainer: {
@@ -86,7 +83,8 @@ const styles = StyleSheet.create({
 	},
 	imageView: {
 		borderRadius: 25,
-		marginEnd: 10,
+		marginEnd: 0,
+		marginStart: 10,
 		borderWidth: 2
 	},
 	image: {

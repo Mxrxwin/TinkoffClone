@@ -9,7 +9,7 @@ export default function UserBar() {
 					<View
 						style={{
 							borderColor: "#aef511",
-							borderWidth: 2,
+							borderWidth: 1.5,
 							borderRadius: 999,
 						}}
 					>
@@ -20,7 +20,6 @@ export default function UserBar() {
 					<View
 						style={{
 							marginStart: 15,
-							marginVertical: 4,
 							justifyContent: "space-between",
 						}}
 					>
@@ -30,7 +29,7 @@ export default function UserBar() {
 								name="chevron-forward"
 								size={16}
 								color="white"
-								style={{ marginTop: 5 }}
+								style={{ marginTop: 4 }}
 							/>
 						</View>
 						<View style={styles.proBorder}>
@@ -51,15 +50,15 @@ export default function UserBar() {
 		flexDirection: "row",
 		justifyContent: "space-between",
 		width: "95%",
-    	marginTop: 30
+    	marginTop: 25
 	},
 	avatar: {
 		backgroundColor: "#52555a",
-		height: 50,
-		width: 50,
+		height: 40,
+		width: 40,
 		borderRadius: 999,
 		borderColor: "#121212",
-		borderWidth: 2,
+		borderWidth: 1.5,
 		justifyContent: "center",
 		alignItems: "center",
 	},
@@ -69,7 +68,7 @@ export default function UserBar() {
 		fontSize: 20,
 	},
 	name: {
-		fontSize: 20,
+		fontSize: 19,
 		color: "white",
 		fontFamily: "tmedium",
 	},
@@ -79,12 +78,12 @@ export default function UserBar() {
 		borderRadius: 999,
 		justifyContent: "center",
 		alignItems: "center",
-		width: 35,
+		width: 32,
 	},
 	proText: {
 		fontFamily: "tbold",
 		color: "white",
-		fontSize: 10,
+		fontSize: 9,
 	},
 	giftBorder: {
 		backgroundColor: "#542bff",
