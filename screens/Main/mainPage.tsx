@@ -4,7 +4,9 @@ import React from "react";
 import Search from "../../components/Search";
 import UserBar from "./Components/userBar";
 import StoryBar from "./Components/storyBar";
-import MainPart from "./Components/spendingsAndCashback";
+import SpendingsAndCashback from "./Components/spendingsAndCashback";
+import MoneyPart from "./Components/moneyPart";
+
 
 export default function MainPage() {
 	return (
@@ -12,7 +14,8 @@ export default function MainPage() {
 			<Search />
 			<UserBar />
 			<StoryBar />
-			<MainPart />
+			<SpendingsAndCashback />
+			<MoneyPart />
 		</View>
 	);
 }

@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import React from "react";
 
-export default function spendingsAndCashback() {
+export default function SpendingsAndCashback() {
 	const Months: string[] = [
 		"январе",
 		"феврале",
@@ -35,7 +35,7 @@ export default function spendingsAndCashback() {
 	return (
 		<View style={styles.lineContainer}>
 			<View style={styles.fstLine}>
-				<View style={styles.block}>
+				<TouchableOpacity style={styles.block}>
 					<Text style={styles.titleText}>Все операции</Text>
 					<Text style={styles.spendings}>
 						Трат в {Months[new Date().getMonth()]} 24 214 ₽
@@ -48,8 +48,8 @@ export default function spendingsAndCashback() {
 						<View style={{width: '10%', backgroundColor: SpendingsColors[4]}}></View>
 						<View style={{width: '10%', backgroundColor: SpendingsColors[5]}}></View>
 					</View>
-				</View>
-				<View style={styles.block}>
+				</TouchableOpacity>
+				<TouchableOpacity style={styles.block}>
 					<View style={styles.cashBackLine}>
 						<View style={styles.cashTextLine}>
 							<Text style={styles.cashText}>Кэшбэк</Text>
@@ -64,7 +64,7 @@ export default function spendingsAndCashback() {
 						<Image style={styles.partnersImage} source={{ uri: Partners[1]}}/>
 						<Image style={styles.partnersImage} source={{ uri: Partners[2]}}/>
 					</View>
-				</View>
+				</TouchableOpacity>
 			</View>
 		</View>
 	);
