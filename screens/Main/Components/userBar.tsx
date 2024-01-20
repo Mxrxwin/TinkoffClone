@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 export default function UserBar() {
     return  (
-        <View style={styles.nameLineContainer}>
+        <View style={styles.lineContainer}>
 				<TouchableOpacity style={{ flexDirection: "row" }}>
 					<View
 						style={{
@@ -47,11 +47,11 @@ export default function UserBar() {
 
 
  const styles = StyleSheet.create({
-	nameLineContainer: {
+	lineContainer: {
 		flexDirection: "row",
 		justifyContent: "space-between",
 		width: "95%",
-    marginTop: 30
+    	marginTop: 30
 	},
 	avatar: {
 		backgroundColor: "#52555a",
